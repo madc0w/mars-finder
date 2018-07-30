@@ -1,0 +1,326 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Emory Physics | Mars Geocentric Distance</title>
+<link rel="stylesheet"
+	href="http://www.physics.emory.edu/astronomy/main.css" media="screen"
+	type="text/css">
+<link rel="stylesheet" href="http://www.physics.emory.edu/index.css"
+	type="text/css" media="screen">
+<script src="mars_calc_V4.js"></script>
+<style type="text/css">
+<!--
+td {
+	font-size: 12px;
+}
+
+div#mars {
+	
+}
+
+div#mars a {
+	display: block;
+	color: black;
+	text-decoration: underline;
+}
+
+div#mars a:hover {
+	
+}
+
+div#mars a span {
+	display: none;
+	position: absolute;
+}
+
+div#mars a:hover span {
+	display: block;
+	top: 480px;
+	left: 205px;
+	width: 225px; padding 5px;
+	margin: 5px;
+	color: white;
+	background: black;
+	border-width: 5px;
+	border-color: red;
+	font: 12px Verdana, sans-serif;
+	text-align: center;
+}
+
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	text-align: left;
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+}
+-->
+</style>
+</head>
+<body>
+	<div id="main-frame" style="margin-left: 20px;">
+		<div id="header">
+			<div id="header-links">
+				<a href="http://www.emory.edu">Emory University</a>&nbsp;|&nbsp;<a
+					href="http://college.emory.edu">Emory College</a>&nbsp;|&nbsp;<a
+					href="http://www.graduateschool.emory.edu">Graduate School</a>&nbsp;|&nbsp;<a
+					href="http://it.emory.edu">Emory IT</a>
+			</div>
+			<table border="0" cellspacing="0" cellpadding="0" id="header-logos">
+				<tr>
+					<td id="header-physics"
+						style="background-image: url(http://www.physics.emory.edu/astronomy/images/background.jpg)"><a
+						href="http://www.physics.emory.edu/index.html"><img
+							src="http://www.physics.emory.edu/images/banner.png" border="0"
+							alt="Department of Physics"></a><a href="http://www.emory.edu"><img
+							src="http://www.physics.emory.edu/images/BaseEmory.png"
+							border="0" alt="Department of Physics"></a></td>
+				</tr>
+			</table>
+		</div>
+
+		<table border="0" cellspacing="0" cellpadding="0" id="body-container">
+			<tr>
+
+				<td id="menu-pane">
+					<div id="main-menu-container">
+						<ul>
+							<li><div class="main-menu-title-link">
+									<a href="http://www.physics.emory.edu/people/">People</a>
+								</div></li>
+							<li><div class="main-menu-title main-menu-selected">Research</div></li>
+							<li><div class="main-menu-title-leaf">
+									<a href="http://www.physics.emory.edu/research/ebp.html">Experimental
+										Biophysics</a>
+								</div></li>
+							<li><div class="main-menu-title-leaf">
+									<a href="http://www.physics.emory.edu/research/ecmp.html">Experimental
+										Condensed Matter Physics</a>
+								</div></li>
+							<li><div class="main-menu-title-leaf">
+									<a href="http://www.physics.emory.edu/research/tcs.html">Theoretical
+										and Computational Statistical Physics</a>
+								</div></li>
+						</ul>
+						<ul>
+							<li><div class="main-menu-title-link">
+									<a href="http://www.physics.emory.edu/graduate/">Graduate
+										Program</a>
+								</div></li>
+							<li><div class="main-menu-title-link">
+									<a href="http://www.physics.emory.edu/undergraduate/">Undergraduate
+										Programs</a>
+								</div></li>
+							<li><div class="main-menu-title-link">
+									<a href="http://www.physics.emory.edu/facilities/">Facilities</a>
+								</div></li>
+							<li><div class="main-menu-title-link">
+									<a href="http://www.physics.emory.edu/colloquia/">Colloquia</a>
+								</div></li>
+							<li><div class="main-menu-title-link">
+									<a href="http://www.physics.emory.edu/astronomy">Astronomy</a>
+								</div></li>
+							<li><div class="main-menu-title-link">
+									<a href="http://www.physics.emory.edu/findus.html">Contact
+										Physics</a>
+								</div></li>
+						</ul>
+					</div>
+
+					<div id="main-menu-container">
+						<form action="http://www.google.com/u/emoryuniversity"
+							method="get" style="margin: 0px;">
+							<input type="hidden" name="domains" value="physics.emory.edu">
+							<input type="hidden" name="sitesearch" value="physics.emory.edu">
+							<ul>
+								<li><div class="main-menu-title main-menu-selected">Search
+										Physics</div></li>
+							</ul>
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td id="main-menu-search-input"><input type="text"
+										name="q" maxlength="255"></td>
+
+									<td id="main-menu-search-button"><input type="submit"
+										value="OK"></td>
+								</tr>
+
+							</table>
+						</form>
+					</div>
+					<div id="main-menu-address-frame">
+						<div id="main-menu-address">
+							<div>Department of Physics</div>
+							<div>Math &amp; Science Center</div>
+
+							<div>400 Dowman Dr., N201</div>
+							<div>Atlanta, GA 30322</div>
+
+							<div>Phone: (404) 727-6584</div>
+							<div>
+								<a
+									href="http://maps.google.com/maps?hl=en&safe=off&q=400+Dowman+Dr,+Atlanta,+GA+30322&ie=UTF8&ll=33.770443,-84.31818&spn=0.092325,0.176983&z=13"
+									target="_blank">Google Map</a>
+							</div>
+						</div>
+					</div>
+				</td>
+				<td id="content-pane"><div id="content-container">
+
+						<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="1">
+							<TR>
+								<TD colspan="2" VALIGN="TOP"><h1>Mars Geocentric
+										Distance</h1>
+									<HR width="645"></TD>
+							</TR>
+							<TR>
+
+								<td><h3>Real-time Distance Calculator</h3>
+									<table border=0>
+										<tr valign="top">
+											<td><div id="mars">
+													<A HREF="">Local Time:<span>The current local
+															time.</span></a>
+												</div></td>
+											<td width="200"><span id="time"> <script
+														type="text/javascript">var now = new Date();
+												document.write(now);
+											</script>
+											</span></td>
+										</tr>
+										<tr>
+											<td><div id="mars">
+													<A HREF="">Universal Time:<span>Standardized
+															time calculated by the rotation of the Earth.</span></a>
+												</div></td>
+											<td><span id="utc"> <script
+														type="text/javascript">var utc = new Date();
+												utc = UTCdate(utc); document.write(utc);
+											</script>
+											</span></td>
+										</tr>
+										<tr>
+											<td><div id="mars">
+													<A HREF="">Julian Day:<span>Number of days since
+															the year 4712 B.C.</span></a>
+												</div></td>
+											<td><span id="jd"></span></td>
+										</tr>
+										<tr>
+											<td><div id="mars">
+													<A HREF="">Distance:<span>The current distance
+															of Mars to Earth. 1 A.U. (Astronomical Unit) is equal to
+															approx. 93 million miles.</span></a>
+												</div></td>
+											<td><span id="distAU"></span></td>
+										</tr>
+										<tr>
+											<td width="133">&nbsp;</td>
+											<td><span id="distMiles" style="font-weight: bold"></span></td>
+											<!-- Bureau of Standards uses conversion factor of 0.621371192 to convert km to miles.
+	1 AU = 149,597,870.691km * 0.6213711922 = 92955807.26 miles
+	or (KM*1000*3.280839895013)/5280 -->
+										</tr>
+										<tr>
+											<td><div id="mars">
+													<A HREF="">Light Time:<span>The time it takes
+															for reflected light to travel from Mars to Earth.</span></a>
+												</div></td>
+											<td><span id="lightTime"></span></td>
+										</tr>
+										<tr>
+											<td><div id="mars">
+													<A HREF=""> Calculation Time:<span>The time
+															required for the system to perform the iterations and
+															display the distance. Although this time is not factored
+															into the equations it will yield a small error in
+															real-time distance.</span></a>
+												</div></td>
+											<td><span id="calcTime"></span></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td><form style="margin: 0px">
+													<input type="button" value="start"
+														onClick="update = setTimeout('updateAll()',1000)">
+													<input type="button" value="stop"
+														onClick="clearTimeout(update)">
+												</form></td>
+										</tr>
+										<tr>
+											<td colspan="2" style="font-size: 10px"><hr> Miles
+												are displayed in <font color="blue">blue</font> while Mars
+												is approaching, and will become <font color="red">red</font>
+												as it moves farther from Earth. <strong>Place your
+													cursor over the underlined words for useful definitions.</strong>
+											<P>This page is for novelty purposes only do not use for
+													navigation. Algorithms by Horace Dale. Javascript by Scott
+													Meves.</td>
+										</tr>
+									</table></TD>
+								<TD VALIGN="TOP" width="180 px"><div
+										style="float: left; font: italic 10px arial;">
+										<img src="images/MARS_RGB2_med.jpg" width="173" height="173">
+										<br>Photo by H.Dale,<br> Emory University. 26 August
+										2003.
+									</div></TD>
+							</TR>
+						</TABLE>
+
+					</div></td>
+			</tr>
+		</table>
+	</div>
+</body>
+<script src="vsop87.js"></script>
+<script type="text/javascript">
+function updateAll() {
+	var now = new Date();
+	
+	var timeElement=document.getElementById("time");
+	var utcElement=document.getElementById("utc");
+	var jdElement=document.getElementById("jd");
+	var auElement=document.getElementById("distAU");
+	var milesElement=document.getElementById("distMiles");
+	var calcElement=document.getElementById("calcTime");
+	var ltElement=document.getElementById("lightTime"); 
+	
+	var utc = UTCdate(now);
+	var jd = calculateJD(now);
+	//var jd = 2452878.910416667;
+	var earth = getEarthHelio(jd);
+	var mars = getMarsHelio(jd);
+	var d = calcDistance(earth[0],earth[1],earth[2],mars[0],mars[1],mars[2]);
+	var lt = lightTime(d);
+	
+	// subtract light-time from julian day and repeat the calculation
+	var jd_lt = jd - lt;
+	var earth2 = getEarthHelio(jd_lt);
+	var mars2 = getMarsHelio(jd_lt);
+	var d2 = calcDistance(earth2[0],earth2[1],earth2[2],mars2[0],mars2[1],mars2[2]);
+	var lt2 = lightTime(d2);
+	
+	var miles2 = Math.round(d2 * 92955807.267);
+	
+	timeElement.innerHTML=now;
+	utcElement.innerHTML=utc;
+	jdElement.innerHTML=round_num(jd, 5);
+	auElement.innerHTML=round_num(d2, 4)+" AU";
+	if(d < d2) milesElement.style.color='blue';
+	else milesElement.style.color='red';
+	milesElement.innerHTML=commaSplit(miles2)+" miles";
+	ltElement.innerHTML=round_num(lt2*1440, 4)+" minutes";
+	calcElement.innerHTML=speed(now)+" seconds";
+	update = setTimeout("updateAll()",1000);
+}
+window.onload=updateAll;
+
+// new Date("Month dd, yyyy hh:mm:ss") 
+// closet distance is 34646418.6629148 miles on Aug. 27 9:51UT jd: 2452878.910416667
+
+// -->
+
+</script>
+</html>
