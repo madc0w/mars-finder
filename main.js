@@ -61,19 +61,13 @@ function paint() {
 	context.closePath();
 
 	context.beginPath();
-	context.font = "12pt Calibri";
 	var time = new Date(startTime);
 	var isOffset = false;
 	do {
 		var x = timeToX(time);
 		context.moveTo(x, canvas.height / 2 - 8);
 		context.lineTo(x, canvas.height / 2 + 8);
-		if (x > 40) {
-			context.textAlign = "center";
-		} else {
-			context.textAlign = "left";
-		}
-		context.fillText(formatTime(time), x, canvas.height / 2 + (isOffset ? 22 : 42));
+		writeText(formatTime(time), x, canvas.height / 2 + (isOffset ? 22 : 42), x > 40, 12);
 		isOffset = !isOffset;
 		time.setDate(time.getDate() + xLabelInterval * dayInc);
 	} while (time < endTime);
@@ -88,44 +82,35 @@ function paint() {
 	context.stroke();
 	context.closePath();
 
-	context.strokeStyle = "#000000";
-	context.font = "14pt Calibri";
-	context.textAlign = "center";
-	context.fillText(formatTime(now), x, canvas.height - 20);
+	writeText(formatTime(now), x, canvas.height - 20, true, 14);
 
-	context.textAlign = "center";
 	var jd = calculateJD(now);
 	var earth = getEarthHelio(jd);
 	var mars = getMarsHelio(jd);
 	var d = calcDistance(earth[0], earth[1], earth[2], mars[0], mars[1], mars[2]);
-	context.fillText(d.toFixed(2), x, 20);
+	writeText(d.toFixed(2), x, 20, true, 14);
 
 }
 
 function onClick(e) {
 	paint();
 	var x = e.pageX - canvas.offsetLeft;
-	var time = xToTime(x);
-	var jd = calculateJD(time);
-	var earth = getEarthHelio(jd);
-	var mars = getMarsHelio(jd);
-	var d = calcDistance(earth[0], earth[1], earth[2], mars[0], mars[1], mars[2]);
-	context.strokeStyle = "#000000";
-	context.font = "14pt Calibri";
-	if (x > 40) {
-		context.textAlign = "center";
-	} else {
-		context.textAlign = "left";
-	}
-	context.fillText(d.toFixed(2), x, 40);
-	context.fillText(formatTime(time), x, canvas.height - 20);
-
 	context.beginPath();
 	context.strokeStyle = "#008080";
 	context.moveTo(x, 0);
 	context.lineTo(x, canvas.height);
 	context.stroke();
 	context.closePath();
+
+	var time = xToTime(x);
+	var jd = calculateJD(time);
+	var earth = getEarthHelio(jd);
+	var mars = getMarsHelio(jd);
+	var d = calcDistance(earth[0], earth[1], earth[2], mars[0], mars[1], mars[2]);
+	context.strokeStyle = "#000000";
+	writeText(d.toFixed(2), x, 40, x > 40, 14);
+	writeText(formatTime(time), x, canvas.height - 20, x > 40, 14);
+
 }
 
 function timeToX(time) {
@@ -145,4 +130,15 @@ function formatTime(time) {
 	}
 	var timeStr = time.getFullYear() + "/" + month + "/" + time.getDate();
 	return timeStr;
+}
+
+function writeText(text, x, y, isCentered, height) {
+	var dims = context.measureText(text);
+	context.font = height + "pt Calibri";
+	context.fillStyle = "rgba(255, 255, 255, 0.6)";
+	//	context.fillStyle = "#ff0000";
+	context.fillRect(x - (isCentered ? dims.width / 2 : 0), y - height - 2, dims.width, height + 4);
+	context.textAlign = isCentered ? "center" : "left";
+	context.fillStyle = "#000000";
+	context.fillText(text, x, y);
 }
