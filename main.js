@@ -15,6 +15,8 @@ function onLoad() {
 }
 
 function paint() {
+	context.clearRect(0, 0, canvas.width, canvas.height);
+	context.lineWidth = "2";
 	var points = [];
 	var maxY = 0,
 		minY = 999999;
@@ -101,7 +103,6 @@ function paint() {
 }
 
 function onClick(e) {
-	context.clearRect(0, 0, canvas.width, canvas.height);
 	paint();
 	var x = e.pageX - canvas.offsetLeft;
 	var time = xToTime(x);
