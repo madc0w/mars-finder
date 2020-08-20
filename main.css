@@ -6,47 +6,58 @@ body {
 	background-color: #020661;
 	background-repeat: repeat-x;
 	padding: 0px;
-	margin: 0px 0px 15px 0px; }
-	
+	margin: 0px 0px 15px 0px;
+}
+
 div#main-frame {
 	margin-left: auto;
 	margin-right: auto;
-	width: 900px; }
+	width: 900px;
+}
 
-body, input, select, textarea {
+body,
+input,
+select,
+textarea {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 8pt; }
+	font-size: 8pt;
+}
 
 h1 {
 	font-size: 14pt;
 	font-weight: normal;
 	margin: 0px;
 	padding: 15px 0px 0px 0px;
-	border-bottom: 0px solid #3E508B; }
-	
-h2 {	
+	border-bottom: 0px solid #3E508B;
+}
+
+h2 {
 	font-weight: normal;
 	margin: 15px 10px 0px 0px;
 	font-size: 12pt;
-	border-bottom: 1px solid #000000; }
+	border-bottom: 1px solid #000000;
+}
 
 h3 {
 	font-size: 8pt;
 	padding: 0px 0px 0px 0px;
 	padding: 0px 0px 2px 0px;
 	margin: 15px 10px 0px 0px;
-	border-bottom: 1px solid #3E508B; }
+	border-bottom: 1px solid #3E508B;
+}
 
 a {
-	color: #3E508B; }
-	
+	color: #3E508B;
+}
+
 p {
 	line-height: 140%;
 	margin: 0px;
 	padding-left: 0px;
 	padding-right: 10px;
 	padding-top: 10px;
-	padding-bottom: 0px; }
+	padding-bottom: 0px;
+}
 
 ul,
 ol {
@@ -54,17 +65,20 @@ ol {
 	padding-top: 10px;
 	padding-bottom: 0px;
 	padding-left: 25px;
-	margin: 0px; }
-	
+	margin: 0px;
+}
+
 ul ul,
 ol ol,
 ul ol,
 ol ul {
-	padding-top: 0px; }
+	padding-top: 0px;
+}
 
 ul.extra-spacing li,
 ol.extra-spacing li {
-	padding-bottom: 10px; }
+	padding-bottom: 10px;
+}
 
 /***********************************************
 * header
@@ -73,54 +87,63 @@ ol.extra-spacing li {
 div#header {
 	background-position: right top;
 	background-repeat: no-repeat;
-	height: 132px; }
+	height: 132px;
+}
 
 table#header-logos {
-	width: 100%; }
-	
+	width: 100%;
+}
+
 td#header-physics {
-	text-align: left; }
-	
+	text-align: left;
+}
+
 td#header-emory {
 	padding-right: 5px;
-	text-align: right; }
-	
+	text-align: right;
+}
+
 div#header-links {
 	text-align: right;
 	padding: 5px 0px 6px 15px;
-	color: White; }
+	color: White;
+}
 
 div#header-links a {
 	text-decoration: none;
-	color: White; }
+	color: White;
+}
 
 div#header-links a:hover {
 	text-decoration: none;
-	color: #3E508B; }
+	color: #3E508B;
+}
 
 /***********************************************
 * body
 ************************************************/
 
-table#body-container {
-	}
-	
+table#body-container {}
+
 td#menu-pane {
 	background-color: #CCCCBB;
 	background-color: #EEEEDD;
 	background-color: #6d608b;
 	width: 210px;
-	vertical-align: top; }
+	vertical-align: top;
+}
 
 td#content-pane {
 	background-color: White;
-	vertical-align: top; }
-	
+	vertical-align: top;
+}
+
 div#content-container {
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-bottom: 15px;
-	width: 680px; }
+	width: 680px;
+}
 
 
 /***********************************************
@@ -130,54 +153,60 @@ div#content-container {
 div#main-menu-container {
 	margin-top: 0px;
 	font-size: 10pt;
-	color: white;}
+	color: white;
+}
 
 div#main-menu-container ul,
 div#main-menu-container li {
 	line-height: normal;
 	list-style-type: none;
 	padding: 0px;
-	margin: 0px; }
-	
+	margin: 0px;
+}
+
 
 div#main-menu-container li ul {
-	margin: 0px 10px 10px 10px; }
+	margin: 0px 10px 10px 10px;
+}
 
 div#main-menu-container li div.main-menu-title {
 	font-weight: bold;
-	padding: 10px 0px 5px 10px; }
+	padding: 10px 0px 5px 10px;
+}
 
 div#main-menu-container li div.main-menu-title a {
 	font-weight: bold;
 	font-style: normal;
- }
+}
 
 div#main-menu-container li li div.main-menu-title {
 	margin-top: 3px;
-	font-weight: bold; }	
+	font-weight: bold;
+}
 
 
 div#main-menu-container a {
 	padding: 0px 0px 0px 0px;
 	display: block;
 	text-decoration: none;
-	color: Black; }
+	color: Black;
+}
 
 div#main-menu-container div.main-menu-title-leaf a {
-padding: 3px 0px 3px 20px;
-color: white;
-  }
+	padding: 3px 0px 3px 20px;
+	color: white;
+}
 
 div#main-menu-container div.main-menu-title-leaf a:hover {
-color: black;
-  }
-	
+	color: black;
+}
+
 div#main-menu-container div.main-menu-title-link a {
-padding: 12px 0px 12px 10px;
+	padding: 12px 0px 12px 10px;
 	font-weight: bold;
 	font-style: normal;
 	color: white;
-  }
+}
 
 div#main-menu-container a:hover {
 	background-color: #DDEEFF;
@@ -185,7 +214,7 @@ div#main-menu-container a:hover {
 
 div#main-menu-container div.main-menu-title-link a:hover {
 	color: black;
-  }
+}
 
 
 /***********************************************
@@ -195,17 +224,21 @@ div#main-menu-container div.main-menu-title-link a:hover {
 div#main-menu-search {
 	padding: 10px;
 	background-color: White;
-	margin: 10px; }
-	
+	margin: 10px;
+}
+
 div#main-menu-search-label {
-	margin-bottom: 5px; }
+	margin-bottom: 5px;
+}
 
 td#main-menu-search-input {
-	padding-right: 5px; }
+	padding-right: 5px;
+}
 
 td#main-menu-search-input input {
 	margin-left: 10px;
-	width: 100px; }
+	width: 100px;
+}
 
 /***********************************************
 * address
@@ -217,17 +250,17 @@ div#main-menu-address-frame {
 	margin: 10px;
 	padding-top: 20px;
 	color: white;
-	}
-	
+}
+
 div#main-menu-address-label {
-	font-weight: bold; }
-	
-div#main-menu-address {
-	}
+	font-weight: bold;
+}
+
+div#main-menu-address {}
 
 div#main-menu-address a {
 	color: white;
-	}
+}
 
 
 /***********************************************
@@ -240,4 +273,5 @@ div.navigation-bar {
 	background-color: #EEEEEE;
 	padding: 5px 5px 5px 5px;
 	margin-top: 5px;
-	margin-bottom: 5px; }
+	margin-bottom: 5px;
+}
